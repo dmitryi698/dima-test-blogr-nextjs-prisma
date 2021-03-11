@@ -22,7 +22,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     props: post,
   }
 }
-
+// added new adress, default localhost:3000/api/publish/${id}
 async function publishPost(id: number): Promise<void> {
   await fetch(`https://dima-test-blogr-nextjs-prisma.vercel.app/api/publish/${id}`, {
     method: 'PUT',
